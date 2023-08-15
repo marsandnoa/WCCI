@@ -1,0 +1,65 @@
+
+*{
+    background-color: black;
+    color:#2272FF;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+}
+
+.header a {
+float: left;
+display: block;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+background-color: #333;
+}
+
+.header select{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #333;
+}
+
+.wrapper {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+grid-auto-rows: minmax(100px, auto);
+margin-top: 50px;
+}
+.cookieCountDiv {
+    grid-column: 2;
+    grid-row: 1;
+}
+.restartDiv {
+    grid-column: 1;
+    grid-row: 1;
+}
+.autoclickerCountDiv {
+    grid-column: 3;
+    grid-row: 2;
+}
+.autoclickerPricerDiv {
+    grid-column: 3;
+    grid-row: 1;
+}
+.cookieClickerDiv {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.autoclickerBuyDiv {
+    grid-column: 1;
+    grid-row: 2;
+}

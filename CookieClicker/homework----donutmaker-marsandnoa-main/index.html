@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styling.css" rel="stylesheet" />
+    <title>Donut Clicker</title>
+  </head>
+
+  
+  <div class="header">
+    <select name="info" id="informationSelect" onchange="changeFunc();" onfocus="this.selectedIndex = -1;">
+        <option value="COMPANY">The Company</option>
+        <option value="DEVELOPER">The Developer</option>
+    </select>
+    <a href="https://orteil.dashnet.org/cookieclicker/">The Inspiration</a>
+  </div>
+
+  <dialog class="dCompany">
+    <p>Fred the Baker Baking Company has been making cookies since 1776, and is directly response for 15% of obesity cases in the US!</p>
+    <button onclick="hide()">Close</button>
+  </dialog>
+
+  <dialog class="dDeveloper">
+    <p>Noah is an aspiring software engineer and this is one of his sample projects</p>
+    <p>See Noah's personal site by clicking <a href="https://github.com/marsandnoa">here</a>(this is a repeat of github since personal site isn't hosted yet), and see his github by clicking <a href="https://github.com/marsandnoa">here</a> </p>
+    <button onclick="hide()">Close</button>
+  </dialog>
+
+
+  <body>
+
+    <div class="wrapper">
+
+      <div class="cookieCountDiv">
+        <h1>Counter:</h1>
+        <h2 class="cookieCount">Hello</h2>
+      </div>
+
+      <div class="restartDiv">
+        <h3>Restart Game?</h3>
+        <button onclick="reset()">Restart</button>
+      </div>
+      
+      <div class="autoclickerCountDiv">
+        <h3>Autoclicker Count:</h1>
+        <h4 class="autoclickerCount">Hello</h2>
+      </div>
+
+      <div class="autoclickerPricerDiv">
+        <h3>Autoclicker Price:</h1>
+        <h4 class="autoclickerPricer">Hello</h2>
+      </div>
+
+      <div class="cookieClickerDiv">
+        <button onclick="addCookieCounter(1)">Click for Cookies
+          <img src="cookie.jpg" alt="buttonpng" border="0" />
+        </button>
+      </div>
+
+      <div class="autoclickerBuyDiv">
+        <h3>Click to buy Autoclicker:</h1>
+        <button class="autoclickerBuy" onclick="addAutoclicker()">buy autoclicker</button>
+      </div>
+    </div>
+
+      
+    <script src="./index.js"></script>
+  </body>
+</html>
